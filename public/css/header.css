@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+#searchInput{
+    height:33px;
+    width:auto; 
+    border-radius: 2rem;
+    text-indent: 10px;
+    margin-top:0px;
+}
+
+
+
+.container-head a:hover{
+    border-bottom: 4px solid purple;
+    color:purple;
+   /* border-top-left-radius: 7px; */
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.container-head ul li a{
+    text-decoration: none;
+    transition:all 200ms ease-out;
+    color:black;
+}
+
+.container-head ul li{
+    list-style: none;
+
+}
+
+/* .fa-solid{
+    position:relative;
+    left:-2rem;
+    } */
+
+.item{
+    background-color:white;
+    padding:.5rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap: 3.5rem;
+    margin:3rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 25rem;
+    margin-right: 25rem;      
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:666px){
+    .item{
+        gap:5px;
+        padding:5px;
+        margin: 2rem;
+        flex-direction: column;
+        background: #faf7f2;
+
+    }
+    .fa-solid{
+        position:relative;
+        left:-2rem;
+    }
+}
+
+@media only screen and  (min-width:768px) and (max-width:1023px) {
+
+    .fa-solid{
+    position:relative;
+    top:-1.7rem;
+    left:8rem;
+    }
+    #searchInput{
+        margin-top:1.5rem;
+    
+}
+}
+
+@media only screen and  (min-width:1024px) and (max-width:1440px) {
+
+    .fa-solid{
+    position:relative;
+    top:-1.7rem;
+    left:8rem;
+    }
+    #searchInput{
+        margin-top:1.5rem;
+    
+}
+
+}
+
+@media only screen and  (min-width:2560px) and (max-width:3000px) {
+
+    .fa-solid{
+    position:relative;
+    left:-2rem;
+    }
+    #searchInput{
+        margin-top:1.5rem;
+    
+}
+
+}

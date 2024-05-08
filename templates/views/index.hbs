@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Document</title>
+
+{{!-- searching implementation --}}
+    <script>
+        const searchElement  = ()=>{
+            let searchInput = document.getElementById("searchInput").value.toUpperCase();
+            let cardItem = document.getElementById("card-item-head");
+            let cardNumber = document.getElementsByClassName("cardNumber");
+            
+
+            for(let i = 0 ; i < cardNumber.length ; i++){
+                let data = cardNumber[i].getElementsByTagName('h2')[0];
+
+                if(data){
+                    let dataValue = data.textContent || data.innerHTML;
+
+                    if(dataValue.toUpperCase().indexOf(searchInput) > -1){
+                        cardNumber[i].style.display = " ";
+                    }else{
+                        cardNumber[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    {{>header}}
+
+    <div id="card-item-head">
+    <div class="card-position">
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">1</div>
+            <div class="category">
+                dinner
+            <div class="card-title">
+                <h2>Rajma Rice </h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img2.jpeg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="card-container  cardNumber">
+        <div class="card-body">
+            <div class="card-number">2</div>
+            <div class="category">
+                lunch
+            <div class="card-title">
+                <h2>Sea Foods</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img3.jpeg" alt="Food Images">
+                <a href="/order"><button type="submit">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    <div class="card-container  cardNumber">
+        <div class="card-body">
+            <div class="card-number">3</div>
+            <div class="category">
+                Breakfast
+            <div class="card-title">
+                <h2>Chicken Pav</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img1.jpeg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card-position">
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">4</div>
+            <div class="category">
+                breakfast
+            <div class="card-title">
+                <h2>Juices with Salad</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img5.jpg" alt="Food Images">
+             <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">5</div>
+            <div class="category">
+                lunch
+            <div class="card-title">
+                <h2>colored pasta</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img6.jpg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">6</div>
+            <div class="category">
+                dinner
+            <div class="card-title">
+                <h2>Fish</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img7.jpg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card-position">
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">7</div>
+            <div class="category">
+                evening
+            <div class="card-title">
+                <h2>Swarma</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img8.jpg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">8</div>
+            <div class="category">
+                evening
+            <div class="card-title">
+                <h2>Chicken Fry</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img9.jpg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">9</div>
+            <div class="category">
+                lunch
+            <div class="card-title">
+                <h2>Prone with Garlic</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img10.jpg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card-position">
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">10</div>
+            <div class="category">
+                dinner
+            <div class="card-title">
+                <h2>Dal-rice</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img11.jpg" alt="Food Images">
+               <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">11</div>
+            <div class="category">
+                dinner
+            <div class="card-title">
+                <h2>Kadhai Chicken</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img12.jpg" alt="Food Images">
+                <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="card-container cardNumber">
+        <div class="card-body">
+            <div class="card-number">12</div>
+            <div class="category">
+                lunch
+            <div class="card-title">
+                <h2>Momos</h2>
+                <div class="description">
+                    <p> It is very delicious item to eat. Many people prefer this to eat as Evening item in their food</p>
+                </div>
+                <h3 align="right"><a href="/readmore">Read More...</a></h3>
+                <img src="images/img15.jpg" alt="Food Images">
+               <a href="/order"><button type="button">Order Now</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>  {{!-- end of id one  div which specify the whole card  --}}
+</body>
+   <script src="https://kit.fontawesome.com/8a1f7b5484.js" crossorigin="anonymous">
+   </script>
+</html>
